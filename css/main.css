@@ -1227,12 +1227,9 @@ img {
 .portfolio-card-overlay-text {
   position: absolute;
   margin: 0;
-  top: 0;
-  left: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-  padding-right: 24px;
+  top: 50%;
+  left: 24px;
+  transform: translate(0, -50%);
   font-size: 18px;
   line-height: 1.56;
   color: #ffffff;
@@ -1255,8 +1252,6 @@ img {
   .portfolio-card-overlay-text {
     padding-top: 77px;
     padding-bottom: 77px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 
@@ -1264,8 +1259,6 @@ img {
   .portfolio-card-overlay-text {
     padding-top: 49px;
     padding-bottom: 49px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 
@@ -1273,8 +1266,6 @@ img {
   .portfolio-card-overlay-text {
     padding-top: 63px;
     padding-bottom: 63px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
 
