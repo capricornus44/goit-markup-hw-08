@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studia</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -15,29 +15,14 @@
     <!-- PAGE HEADER -->
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="link logo header-logo" href="./index.html">Web<span>Studio</span></a>
+        <div class="header-inner">
+          <nav class="navigation">
 
-          <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu-container">
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="icon-cross" href="./img/sprite-main.svg#menu-cross"></use>
-              <use class="icon-menu" href="./img/sprite-main.svg#menu-burger"></use>
-            </svg>
-          </button>
-            
-          <div class="menu-container" id="menu-container" data-menu>
-
-            <!-- <button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="menu-container">
-              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon-cross" href="./img/sprite-main.svg#menu-cross"></use>
-                <use class="icon-menu" href="./img/sprite-menu.svg#icon-menu"></use>
-              </svg>
-            </button> -->
-
-            
+            <a class="link logo header-logo" href="./index.html">Web<span>Studio</span></a>
+                    
             <ul class="navigation-list list">
               <li class="navigation-list-item">
-                <a class="link navigation-list-link link-current" href="./index.html">Студия</a>
+                <a class="link navigation-list-link link-current" href="./">Студия</a>
               </li>
               <li class="navigation-list-item">
                 <a class="link navigation-list-link" href="./portfolio.html">Портфолио</a>
@@ -46,26 +31,64 @@
                 <a class="link navigation-list-link" href="./">Контакты</a>
               </li>
             </ul>
-            
-            <ul class="contact-list list">
-              <li class="contact-list-item">
-                <a class="link contact-list-link-tel" href="mailto:info@devstudio.com">
-                  <svg class="contact-list-icon" width="10" height="16">
-                    <use href="./img/sprite-main.svg#smartphone"></use>
-                  </svg>
-                  <span>+38 096 111 11 11</span>
-                </a>
+          </nav>
+  
+          <ul class="contact-list list">
+            <li class="contact-list-item">
+              <a class="link contact-list-link" href="mailto:info@devstudio.com">
+                <svg class="contact-list-icon-mail">
+                  <use href="./img/sprite-main.svg#envelope"></use>
+                </svg>
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+            <li class="contact-list-item">
+              <a class="link contact-list-link" href="tel:+380961111111">
+                <svg class="contact-list-icon-tel">
+                  <use href="./img/sprite-main.svg#smartphone"></use>
+                </svg>
+                <span>+38 096 111 11 11</span>
+              </a>
+            </li>
+          </ul>
+  
+          <button type="button" class="menu-button" data-menu-button>
+            <svg width="40" height="40">
+              <use class="icon-menu" href="./img/sprite-main.svg#menu-burger"></use>
+            </svg>
+          </button>
+  
+  
+          <!-- * MOBILE MENU -->
+  
+          <div class="mobile-menu mobile" data-menu>
+            <button type="button" class="menu-close-button" data-menu-close>
+              <svg width="40" height="40">
+                <use class="icon-cross" href="./img/sprite-main.svg#menu-cross"></use>
+              </svg>
+            </button>
+  
+            <ul class="mobile-nav-list list">
+              <li class="mobile-nav-item">
+                <a class="link mobile-nav-link link-current" href="./">Студия</a>
               </li>
-              <li class="contact-list-item">
-                <a class="link contact-list-link-mail" href="mailto:info@devstudio.com">
-                  <svg class="contact-list-icon" width="16" height="12">
-                    <use href="./img/sprite-main.svg#envelope"></use>
-                  </svg>
-                  <span>info@devstudio.com</span>
-                </a>
+              <li class="mobile-nav-item">
+                <a class="link mobile-nav-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="link mobile-nav-link" href="./">Контакты</a>
               </li>
             </ul>
-
+  
+            <ul class="mobile-contact-list list">
+              <li class="mobile-contact-item">
+                <a class="link mobile-contact-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contact-item">
+                <a class="link mobile-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+  
             <ul class="socials-menu list">
               <li class="socials-menu-item">
                 <a class="socials-menu-link link" href="./">Instagram</a>
@@ -81,7 +104,7 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -189,7 +212,7 @@
                   
                   <source srcset="./img/team/tab-staff-1.jpg, ./img/team/tab-staff-1@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
                   
-                  <source srcset="./img/team/mob-staff-1.jpg, ./img/team/mob-staff-1@2x.jpg 2x" media="(min-width: 280px)" type="image/jpeg" />
+                  <source srcset="./img/team/mob-staff-1.jpg, ./img/team/mob-staff-1@2x.jpg 2x" media="(min-width: 320px)" type="image/jpeg" />
                   
                   <img class="staff-image" src="./img/team/mob-staff-1.jpg" alt="Фотография Игоря Демьяненко" />
                 </picture>
@@ -236,7 +259,7 @@
                   
                   <source srcset="./img/team/tab-staff-2.jpg, ./img/team/tab-staff-2@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
                   
-                  <source srcset="./img/team/mob-staff-2.jpg, ./img/team/mob-staff-2@2x.jpg 2x" media="(min-width: 280px)" type="image/jpeg" />
+                  <source srcset="./img/team/mob-staff-2.jpg, ./img/team/mob-staff-2@2x.jpg 2x" media="(min-width: 320px)" type="image/jpeg" />
                   
                   <img class="staff-image" src="./img/team/mob-staff-2.jpg" alt="Фотография Ольги Репиной" />
                 </picture>
@@ -283,7 +306,7 @@
                   
                   <source srcset="./img/team/tab-staff-3.jpg, ./img/team/tab-staff-3@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
                   
-                  <source srcset="./img/team/mob-staff-3.jpg, ./img/team/mob-staff-3@2x.jpg 2x" media="(min-width: 280px)" type="image/jpeg" />
+                  <source srcset="./img/team/mob-staff-3.jpg, ./img/team/mob-staff-3@2x.jpg 2x" media="(min-width: 320px)" type="image/jpeg" />
                   
                   <img class="staff-image" src="./img/team/mob-staff-3.jpg" alt="Фотография Николая Тарасова" />
                 </picture>
@@ -330,7 +353,7 @@
                   
                   <source srcset="./img/team/tab-staff-4.jpg, ./img/team/tab-staff-4@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg" />
                   
-                  <source srcset="./img/team/mob-staff-4.jpg, ./img/team/mob-staff-4@2x.jpg 2x" media="(min-width: 280px)" type="image/jpeg" />
+                  <source srcset="./img/team/mob-staff-4.jpg, ./img/team/mob-staff-4@2x.jpg 2x" media="(min-width: 320px)" type="image/jpeg" />
                   
                   <img class="staff-image" src="./img/team/mob-staff-4.jpg" alt="Фотография Михаила Ермакова" />
                 </picture>
